@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Output Management</title>
+</head>
+
+<body>
+    <h6></h6>
+
+    <template id="podsumowanie">
+        <div class='containerPodsumowanie'>
+            <div class='box2'>
+                <h1>Wspaniale </h1>
+                <h3>Udało Ci się zarezerować lot</h3>
+                Na trasie <span>wybraneMiejsce[0]</span>
+                , wylot dnia <span>wybraneMiejsce[1]</span>
+                dla <span>wybraneMiejsce[2]</span> liczby osób
+                w klasie <span>wybraneMiejsce[wybraneMiejsce.length-1]</span>
+
+                <div class='box'>
+                    <h3>Podsumowanie kosztów</h3>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+
+    <template id='places'>
+        <div class='container2'>
+            <div class='boxCenter'>
+                <p id='date'> Data wylotu </p>
+                <h1 class='niebieski'>Wybierz swoje miejsca</h1>
+                <h3> dla <span id='osoby'></span> osób <br>
+                    <span id='wybraneMiejsce'> na trasie </span>
+                </h3>
+            </div>
+            <div class='samolot'>
+                <div id='svgSamolot'></div>
+            </div>
+
+
+            <div class='boxRight'>
+                <div>
+                    <p id='time' class='inline'> </p>
+                    <p id='plane' class='inline'> </p>
+                </div>
+                <div class='boxleft'>
+                    <h1 id='wyswietlMiejsca' class='niebieski'>--</h1>
+                    <!-- <h3>Wybierz klasę lotu</h3> -->
+                    <select id='taryfy'>
+                        <option selected>Economy + 0zł</option>
+                        <option>Premium Economy + 280zł</option>
+                        <option>Business + 650zł</option>
+                    </select>
+                </div>
+                <div class='boxleft'>
+                    <p id='baggage'>
+                        <span></span>
+                    </p>
+                    <!-- <h3>Dodaj bagaż</h3> -->
+                    <input type='checkbox' id='dodatkowyBagaz'>
+                    <label> Dodatkowy bagaż (+350zł) </label><br>
+                </div>
+                <div>
+                    <br>
+                    <p class='inline'> Cena </p>
+                    <h3 id='zamowienie' class='inline'><span>0</span> PLN</h3>
+                    <div>
+                        <br>
+                        <button id='wstecz'>WSTECZ</button>
+                        <button id='potwierdz'>Potwierdz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+
+    <template id='reservation'>
+        <div class='container1'>
+            <div class='box2'>
+                <h1>Zaplanuj swoją podróż</h1>
+                <p>Wybierz miejsce, datę oraz liczbę podróżujących</p>
+                <div class='box3'>
+                    <select id='miasta'>
+                        <option selected>Gliwice - Londyn</option>
+                        <option>Gliwice - Tokio</option>
+                        <option>Gliwice - Warszawa</option>
+                    </select>
+                    <input id='date' type='date' min='2020-06-19'>
+                    <select id='osoby'>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                    </select>
+                    <br>
+                    <button id='potwierdz'>Potwierdz</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="dodatki">
+        <div>
+            <h1>Cos</h1>
+            <p>Tam</p>
+            <div class='boxDodatki'>
+                <input type='checkbox' id='dodatkowyBagaz'>
+                <label> Dodatkowy bagaż</label><br>
+                <select id='taryfy'>
+                    <option>Economy</option>
+                    <option>Premium Economy</option>
+                    <option>Business</option>
+                </select>
+                <button id='potwierdz'>Potwierdz</button>
+                <button id='wstecz'>WSTECZ</button>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>

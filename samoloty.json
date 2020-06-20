@@ -1,0 +1,38 @@
+[
+    {
+        "miasto": "Gliwice - Londyn",
+        "samolot": "Bombardier",
+        "pierwszaKlasa": 50,
+        "drugaKlasa": 100,
+        "trzeciaKlasa": 150,
+        "dodatkowyBagaz": 350,
+        "economy": 0,
+        "premiumEconomy": 280,
+        "business": 650,
+        "czas":"1h 38min"
+    },
+    {
+        "miasto": "Gliwice - Tokio",
+        "samolot": "Boeing 737",
+        "pierwszaKlasa": 60,
+        "drugaKlasa": 110,
+        "trzeciaKlasa": 160,
+        "dodatkowyBagaz": 350,
+        "economy": 0,
+        "premiumEconomy": 280,
+        "business": 650,
+        "czas":"8h 12min"
+    },
+    {
+        "miasto": "Gliwice - Warszawa",
+        "samolot": "Boeing 747",
+        "pierwszaKlasa": 70,
+        "drugaKlasa": 120,
+        "trzeciaKlasa": 170,
+        "dodatkowyBagaz": 350,
+        "economy": 0,
+        "premiumEconomy": 280,
+        "business": 650,
+        "czas":"6min"
+    }
+]

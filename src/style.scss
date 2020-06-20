@@ -1,0 +1,488 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+
+$body-color:#273575;
+*{
+  box-sizing: border-box;
+  color: $body-color;
+  overscroll-behavior: none;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+body {
+  color: $body-color;
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+.hello {
+    color: $body-color;
+}
+
+input {
+  outline: none;
+  margin: 20px 20px 20px 0px;  
+  // width: 100%;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #DBDBDB;
+	padding:20px 30px;
+  border-radius: 30px;
+  color: #C1C8DD;
+  
+
+  &:focus {
+    border: 1px solid;
+    box-shadow: 0px 0px 0 3px;
+    
+ }
+}
+
+select {
+  outline: none;
+  margin: 20px 20px 20px 0px;  
+  // width: 28%;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #DBDBDB;
+	padding:20px 30px;
+  border-radius: 30px;
+  color: #C1C8DD;
+  &:focus {
+    border: 1px solid;
+    box-shadow: 0px 0px 0 3px;
+ }
+}
+
+button {
+  outline: none;
+  border: none;
+	padding:20px 50px;
+	border-radius:30px;
+  background: #0B32E3;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 10px
+}
+button[disabled]{
+  border: 1px solid #c7cbd8;
+  background-color: #b5bed8;
+  color:#cbd1e2;
+}
+
+h1 {
+font-weight: 800;
+font-size: 60px;
+}
+
+h2{
+  font-size: 36px;
+}
+
+p{
+  color: #949EBB;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items: center;
+  // border: 5px solid blue;
+  height: 90vh;
+  width: 92vw;
+}
+.container1{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  // border: 5px solid blue;
+  height: 88vh;
+  width: 92vw;
+  margin:1vw 4vw ;
+  background-color: white;
+  padding: 50px 70px;
+  border-radius: 30px;
+  overscroll-behavior-y: contain;  
+}
+
+.container2{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  // border: 5px solid blue;
+  height: 85%;
+  width: 92%;
+  margin: 2% 4% ;
+  min-height: 920px;
+  background-color: white;
+  padding: 30px 70px;
+  border-radius: 30px;
+  overscroll-behavior-y: contain;
+  background-image: url(./assets/samoloty-srodek.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1900px;
+  
+}
+.containerPodsumowanie{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  // border: 5px solid blue;
+  height: 83%;
+  width: 92%;
+  margin: 2% 4% ;
+  padding: 50px 70px;
+  border-radius: 30px;
+  overscroll-behavior-y: contain;
+  background-color: white;
+  background-image: url(./assets/podsumowanie.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  
+}
+
+
+.container3{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  // border: 5px solid blue;
+  height: 92%;
+  width: 92%;
+   padding: 50px 70px;
+  border-radius: 30px;
+  overscroll-behavior-y: contain;
+    
+}
+
+.box {
+  text-align: center;
+  min-height:25.625em;
+  padding: 300px 0px 0px 0px;
+  border-radius: 30px;
+  margin: 80px;
+  top: 50%;
+  
+}
+.boxDodatki{
+  max-width:25.625em;
+	min-height:25.625em;
+  background-color: white;
+  padding: 50px 70px;
+  border-radius: 30px;
+  width: 400px;
+  margin: 80px;
+  top: 50%;
+}
+
+.box1{
+  text-align: right;  
+  max-width:600px;
+  min-height:400px;
+  margin: 80px;
+  
+}
+
+.box2{
+  text-align: center;  
+  width: 1000vw;
+  // margin: 80px;
+  
+}
+.box3{
+  text-align: center;  
+  width: 100%;
+  
+}
+
+.boxleft{
+  border-width: 1px;
+  border-style: none;
+  border-color: #DBDBDB;
+  border-bottom-style: solid;
+  
+}
+
+.boxRight{
+  display: block;
+  width: 30%;
+
+}
+
+
+.boxCenter{
+  display: block;
+    width: 30%;
+
+}
+
+#logo{
+  padding: 100px 0px 0px 0px;
+  width: 200px;
+ }
+
+.date{
+  width: 28%;
+}
+
+
+svg{
+  fill:white;;
+  stroke: #0B32E3;
+  stroke-width:1;
+  // border-radius: 10px;
+
+
+}
+#places{
+  text-align: center;  
+  background-color: white;
+  padding: 50px 70px;
+  border-radius: 30px;
+  width: 400px;
+  margin: 80px;
+  }
+
+.samolot{
+  display: block;
+  width: 30%;
+  height: 100%;
+}
+
+#svgSamolot{
+  
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: center;  
+
+}
+
+.inline{
+  display:inline;
+}
+
+#wstecz{
+  background-color:#273575; ;
+}
+
+#taryfy{
+  margin: 0 20px 20px 0px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+}
+
+#logo1{
+  padding: 20px 0px 0px 0px;
+  height: 55px;
+  width: 200px;
+  margin: 0% 4% ;
+  justify-content: flex-start;
+
+
+}
+
+#wyloguj{
+  justify-content: flex-end;
+
+}
+.niebieski{
+  color:#0B32E3;
+}
+.jasnyTekst{
+  color: #949EBB;
+}
+
+
+
+#cenaID{
+  font-size: 36px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  body{
+    
+    background-size: cover;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+  
+  .container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 92%;
+    margin: 4% 4% 4% 4%;
+    background-color: white;
+    padding: 50px 70px;
+    border-radius: 30px;
+    overscroll-behavior-y: contain;
+
+  }
+  
+  .container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 92%;
+    margin: 2% 4%;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 30px;
+    overscroll-behavior-y: contain;
+    background-image: url(./assets/samoloty-srodek.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1900px;
+    text-align: center;
+
+}
+    
+
+  .containerPodsumowanie{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100%;
+    width: 92%;
+    margin: 2% 4% ;
+    padding: 50px 70px;
+    border-radius: 30px;
+    overscroll-behavior-y: contain;
+    background-color: white;
+    background-image: url(./assets/podsumowanie.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: 500px;
+    
+  }
+  
+  
+  .container3{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    // border: 5px solid blue;
+    width: 92%;
+     padding: 50px 70px;
+    border-radius: 30px;
+    overscroll-behavior-y: contain;
+      
+  }
+  .box{
+    text-align: center;
+    padding: 300px 0px 0px 0px;
+    border-radius: 30px;
+    margin: 80px;
+    top: 50%;
+  }
+
+  .boxDodatki {
+    max-width: 350px;
+    min-height: 500px;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 30px;
+    margin: 20px;
+    width: 400px;
+    top: 50%;
+  }
+  .box1 {
+    text-align: left;
+    max-width: 600px;
+    min-height: 400px;
+    margin: 20px 80px;
+}
+
+.box2 {
+  text-align: center;
+  width: 80vw; 
+  margin: 10px;
+}
+
+
+select {
+    margin: 10px 10px 10px 10px;
+}
+
+input {
+  outline: none;
+  margin: 10px 10px 10px 10px;
+}
+#logo1 {
+  height: 45px;
+  width: 145px;
+}
+.boxCenter {
+  display: block;
+  width: 92%;
+  background-color:rgba(252, 252, 252, 0.8);
+
+
+}
+#svgSamolot {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.samolot {
+  display: block;
+  width:100%;
+  height: 100%;
+  margin:50px 0px;
+}
+.boxRight {
+  display: block;
+  width: 100%;
+  background-color:rgba(252, 252, 252, 0.8);
+  padding: 30px 0px;
+}
+#taryfy {
+  margin: 0px 0px 20px 0px;
+}
+#wyloguj{
+  justify-content: flex-end;
+
+}
+}

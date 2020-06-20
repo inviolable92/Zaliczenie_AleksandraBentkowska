@@ -1,0 +1,147 @@
+$body-color:#273575;
+*{
+  box-sizing: border-box;
+  color: $body-color;
+}
+
+body {
+  color: $body-color;
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+}
+
+.hello {
+    color: $body-color;
+}
+
+input {
+  outline: none;
+  margin: 20px 20px 20px 0px;  
+  // width: 100%;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #DBDBDB;
+	padding:20px 30px;
+  border-radius: 30px;
+  color: #C1C8DD;
+  
+
+  &:focus {
+    border: 1px solid;
+    box-shadow: 0px 0px 0 3px;
+    
+ }
+}
+
+select {
+  outline: none;
+  margin: 20px 20px 20px 0px;  
+  width: 28%;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #DBDBDB;
+	padding:20px 30px;
+  border-radius: 30px;
+  color: #C1C8DD;
+  &:focus {
+    border: 1px solid;
+    box-shadow: 0px 0px 0 3px;
+ }
+}
+
+button {
+  outline: none;
+  border: none;
+	padding:20px 50px;
+	border-radius:30px;
+  background: #0B32E3;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+h1 {
+font-weight: 800;
+font-size: 60px;
+}
+
+h2{
+  font-size: 36px;
+}
+
+p{
+  color: #949EBB;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  // border: 5px solid blue;
+  height: 100%;
+  width: 100%;
+  
+
+}
+
+.container1{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  // border: 5px solid blue;
+  height: 92%;
+  width: 92%;
+  margin:4%;
+  background-color: white;
+  padding: 50px 70px;
+  border-radius: 30px;
+  
+
+}
+.box {
+  
+  max-width:25.625em;
+	min-height:25.625em;
+  background-color: white;
+  padding: 50px 70px;
+  border-radius: 30px;
+  width: 400px;
+  // margin: 80px;
+  // top: 80%;
+  margin-top: 200px;
+
+}
+
+.box1{
+  text-align: right;  
+  max-width:600px;
+  min-height:400px;
+  margin: 80px;
+  
+}
+
+.box2{
+  text-align: center;  
+  max-width:60.625em;
+  min-height:12em;
+  margin: 80px;
+  
+}
+
+#logo{
+  padding: 100px 0px 0px 0px;
+  width: 200px;
+}
+
+.date{
+  width: 28%;
+}
+
+// .siedzenie{
+//   fill:white;;
+//   stroke: #0B32E3;;
+//   stroke-width:1;
+//   fill-opacity:0.1;
+//   stroke-opacity:0.9
+// }
